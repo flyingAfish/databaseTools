@@ -18,10 +18,7 @@ public class ExcelToolTest {
 
     @Test
     public void excelInport() throws IOException {
-        Path path = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "template");
-        Path fileName = path.getFileName();
-        String filePath = "G:\\program\\Java\\JetBrains\\WorkSpace\\innerWorkSpace\\databaseTools\\src\\main\\resources\\template\\hive数据模型模板.xlsx";
-        // String filePath = "D:\\Program Files\\JetBrains\\workspace\\databaseTools\\src\\main\\resources\\template\\hive数据模型模板.xlsx";
+        String filePath = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "template", "hive数据模型模板.xlsx").toString();
         File absoluteFile = new File(filePath).getAbsoluteFile();
         System.out.println(absoluteFile);
 

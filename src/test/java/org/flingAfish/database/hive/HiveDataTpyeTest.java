@@ -7,7 +7,6 @@ public class HiveDataTpyeTest {
     @Test
     public void isHiveDataType() {
         System.out.println(HiveDataTpye.isHiveDataType("tinyint"));
-
         System.out.println(HiveDataTpye.isHiveDataType("TINYINT"));
         System.out.println(HiveDataTpye.isHiveDataType("SMALLINT"));
         System.out.println(HiveDataTpye.isHiveDataType("INT"));

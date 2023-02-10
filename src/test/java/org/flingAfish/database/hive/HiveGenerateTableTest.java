@@ -5,6 +5,7 @@ import org.flingAfish.map.HiveColumnMap;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.List;
 import java.util.Map;
 
@@ -12,8 +13,7 @@ public class HiveGenerateTableTest {
 
     @Test
     public void testGenarateCrtTable() {
-        String excelFile = "G:\\program\\Java\\JetBrains\\WorkSpace\\innerWorkSpace\\databaseTools\\src\\main\\resources\\template\\hive数据模型模板.xlsx";
-        // String excelFile = "D:\\Program Files\\JetBrains\\workspace\\databaseTools\\src\\main\\resources\\template\\hive数据模型模板.xlsx";
+        String excelFile = Paths.get(System.getProperty("user.dir"), "src", "main", "resources", "template", "hive数据模型模板.xlsx").toString();
 
         try {
             HiveColumnMap hiveColumnMap = App.parseColumnMap(excelFile);
